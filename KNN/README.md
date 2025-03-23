@@ -28,19 +28,26 @@ KNN/
 ### :computer: Thiết lập môi trường ảo (`venv`) (Optional)
 Sử dụng môi trường ảo giúp cô lập các thư viện Python của dự án với hệ thống. Làm theo các bước sau:
 
-#### **Tạo môi trường ảo**
+> #### **Tạo môi trường ảo**
 Trong thư mục chứa dự án, chạy lệnh sau để tạo môi trường ảo (`venv`):
 
 ```bash
 python -m venv myenv
 ```
 
-Sau khi tạo môi trường ảo active lên bằng lệnh
+> Sau khi tạo môi trường ảo active lên bằng lệnh
+
 ```bash
 myenv\Scripts\activate
 ```
 
-:one: Cài đặt thư viện cần thiết
+> Bạn cũng có thể tắt venv nếu cần thiết bằng lệnh
+
+```bash
+deactivate
+```
+
+> :one: Cài đặt thư viện cần thiết
 
 Trước khi chạy mã, hãy cài đặt các thư viện cần thiết bằng lệnh:
 
@@ -48,7 +55,7 @@ Trước khi chạy mã, hãy cài đặt các thư viện cần thiết bằng 
 pip install -r requirements.txt 
 ```
 
-:two: Chạy minh họa `KNN`
+> :two: Chạy minh họa `KNN`
 
 Chạy minh họa KNN sử dụng manim từ terminal bằng lệnh:
 ```
@@ -75,7 +82,7 @@ python KNNGdal.py
 
 Dự án có các video trực quan hóa thuật toán `KNN`. Bạn có thể mở file [KNNVisualization.mp4](/KNN/KNNVisualize/Video/KNNVisualization.mp4) và [myvideo.mp4](/KNN/KNNVisualize/Video/myvideo.mp4) trong thư mục Video để xem chi tiết.
 
-:three: Tương tác với biểu đồ
+> :three: Tương tác với biểu đồ
 
 Mở file [KNN.ipynb](/KNN/KNNVisualize/NotebookInteractive/KNN.ipynb) trong Jupyter Notebook để chạy từng bước.
 
@@ -83,7 +90,7 @@ Nếu như đã chạy xong hết thì sẽ hiện hình bên dưới có thể 
 
 ![alt text](/KNN/KNNVisualize/NotebookInteractive/newplot.png "Title")
 
-:four: Image Classification với dữ liệu Dog,Cat,Panda
+> :four: Image Classification với dữ liệu Dog,Cat,Panda
 
 Chạy file [KNN.ipynb](/KNN/KNNOfficial/KNN.ipynb) bằng cách bấm Runall sẽ cho ra kết quả như hình bên dưới
 
