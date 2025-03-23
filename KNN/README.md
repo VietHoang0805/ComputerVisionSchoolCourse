@@ -74,7 +74,7 @@ Chạy minh họa `KNN` sử dụng `Gdal` từ terminal bằng lệnh:
 python KNNGdal.py
 ```
 
-**Sau khi chạy sẽ có kết quả [myvideo.mp4](/KNN/KNNVisualize/Video/myvideo.mp4) **
+**Sau khi chạy sẽ có kết quả [myvideo.mp4](/KNN/KNNVisualize/Video/myvideo.mp4)**
 
 
 :tv: Video minh họa
