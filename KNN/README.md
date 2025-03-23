@@ -47,7 +47,7 @@ myenv\Scripts\activate
 deactivate
 ```
 
-> :one: Cài đặt thư viện cần thiết
+:one: Cài đặt thư viện cần thiết
 
 Trước khi chạy mã, hãy cài đặt các thư viện cần thiết bằng lệnh:
 
@@ -55,7 +55,7 @@ Trước khi chạy mã, hãy cài đặt các thư viện cần thiết bằng 
 pip install -r requirements.txt 
 ```
 
-> :two: Chạy minh họa `KNN`
+:two: Chạy minh họa `KNN`
 
 Chạy minh họa KNN sử dụng manim từ terminal bằng lệnh:
 ```
@@ -66,7 +66,7 @@ Chi tiết setup cài `manim` trên VSCode [Manim Setup](https://www.youtube.com
 
 **Sau khi chạy sẽ hiện ra video như bên dưới**
 
-<video controls src="KNNVisualize/Video/KNNVisualization.mp4" title="Title"></video>
+![alt text](KNNVisualize/Video/Gif/ManimKNNVissualize.gif)
 
 Chạy minh họa `KNN` sử dụng `Gdal` từ terminal bằng lệnh:
 
@@ -82,7 +82,7 @@ python KNNGdal.py
 
 Dự án có các video trực quan hóa thuật toán `KNN`. Bạn có thể mở file [KNNVisualization.mp4](/KNN/KNNVisualize/Video/KNNVisualization.mp4) và [myvideo.mp4](/KNN/KNNVisualize/Video/myvideo.mp4) trong thư mục Video để xem chi tiết.
 
-> :three: Tương tác với biểu đồ
+:three: Tương tác với biểu đồ
 
 Mở file [KNN.ipynb](/KNN/KNNVisualize/NotebookInteractive/KNN.ipynb) trong Jupyter Notebook để chạy từng bước.
 
@@ -90,7 +90,7 @@ Nếu như đã chạy xong hết thì sẽ hiện hình bên dưới có thể 
 
 ![alt text](/KNN/KNNVisualize/NotebookInteractive/newplot.png "Title")
 
-> :four: Image Classification với dữ liệu Dog,Cat,Panda
+:four: Image Classification với dữ liệu Dog,Cat,Panda
 
 Chạy file [KNN.ipynb](/KNN/KNNOfficial/KNN.ipynb) bằng cách bấm Runall sẽ cho ra kết quả như hình bên dưới
 
