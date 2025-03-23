@@ -21,12 +21,28 @@ KNN/
 │   │── KNNGdal.py            # Code sử GDAL
 │   │── main.py               
 ```
-🚀 Hướng dẫn sử dụng
+### 🚀 Hướng dẫn sử dụng
+
+### Thiết lập môi trường ảo (`venv`) (Optional)
+Sử dụng môi trường ảo giúp cô lập các thư viện Python của dự án với hệ thống. Làm theo các bước sau:
+
+#### Tạo môi trường ảo
+Trong thư mục chứa dự án, chạy lệnh sau để tạo môi trường ảo (`venv`):
+
+```bash
+python -m venv myenv
+```
+
+Sau khi tạo môi trường ảo active lên bằng lệnh
+```bash
+myenv\Scripts\activate
+```
 
 1. Cài đặt thư viện cần thiết
 
 Trước khi chạy mã, hãy cài đặt các thư viện cần thiết bằng lệnh:
-```
+
+```bash
 pip install -r requirements.txt 
 ```
 
@@ -39,7 +55,8 @@ manim -pql KNN.py KNNVisualization
 Chi tiết setup cài manim trên VSCode [Manim Setup](https://www.youtube.com/watch?v=ib-I3ayqFaw).
 
 Chạy minh họa KNN sử dụng Gdal từ terminal bằng lệnh:
-```
+
+```bash
 python KNNGdal.py
 
 ```
