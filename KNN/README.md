@@ -61,17 +61,17 @@ python KNNGdal.py
 
 ```
 📺 Video minh họa
-Dự án có các video trực quan hóa thuật toán KNN. Bạn có thể mở file KNNVisualization.mp4 và myvideo.mp4 trong thư mục Video để xem chi tiết.
+Dự án có các video trực quan hóa thuật toán KNN. Bạn có thể mở file [KNNVisualization.mp4](/KNN/KNNVisualize/Video/KNNVisualization.mp4) và [myvideo.mp4](/KNN/KNNVisualize/Video/myvideo.mp4) trong thư mục Video để xem chi tiết.
 
 3. Tương tác với biểu đồ
 
-Mở file KNN.ipynb trong Jupyter Notebook để chạy từng bước.
+Mở file [KNN.ipynb](/KNN/KNNVisualize/NotebookInteractive/KNN.ipynb) trong Jupyter Notebook để chạy từng bước.
 Nếu như đã chạy xong hết thì sẽ hiện hình bên dưới có thể điều chỉnh giá trị k
 
 ![alt text](/KNN/KNNVisualize/NotebookInteractive/newplot.png "Title")
 
 4. Image Classification với dữ liệu Dog,Cat,Panda
 
-Chạy file KNN.ipynb bằng cách bấm Runall sẽ cho ra kết quả như hình bên dưới
+Chạy file [KNN.ipynb](/KNN/KNNOfficial/KNN.ipynb) bằng cách bấm Runall sẽ cho ra kết quả như hình bên dưới
 
 ![alt text](/KNN/KNNOfficial/output.png "Title")
