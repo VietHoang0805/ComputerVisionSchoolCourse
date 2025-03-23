@@ -1,8 +1,9 @@
 # KNN Visualization
 
-Đây là dự án minh họa thuật toán K-Nearest Neighbors (KNN) thông qua các tệp mã nguồn, dữ liệu và video trực quan.
+Đây là dự án minh họa thuật toán `K-Nearest Neighbors (KNN)` thông qua các tệp mã nguồn, dữ liệu và video trực quan.
 
-## 📁 Cấu trúc thư mục
+## :file_folder: Cấu trúc thư mục
+
 ```
 KNN/
 │── KNNOfficial/              # Thư mục chứa minh họa về KNN Image classification
@@ -21,12 +22,13 @@ KNN/
 │   │── KNNGdal.py            # Code sử GDAL
 │   │── main.py               
 ```
-### 🚀 Hướng dẫn sử dụng
 
-### Thiết lập môi trường ảo (`venv`) (Optional)
+### :rocket: Hướng dẫn sử dụng
+
+### :computer: Thiết lập môi trường ảo (`venv`) (Optional)
 Sử dụng môi trường ảo giúp cô lập các thư viện Python của dự án với hệ thống. Làm theo các bước sau:
 
-#### Tạo môi trường ảo
+#### **Tạo môi trường ảo**
 Trong thư mục chứa dự án, chạy lệnh sau để tạo môi trường ảo (`venv`):
 
 ```bash
@@ -38,7 +40,7 @@ Sau khi tạo môi trường ảo active lên bằng lệnh
 myenv\Scripts\activate
 ```
 
-1. Cài đặt thư viện cần thiết
+:one: Cài đặt thư viện cần thiết
 
 Trước khi chạy mã, hãy cài đặt các thư viện cần thiết bằng lệnh:
 
@@ -46,31 +48,42 @@ Trước khi chạy mã, hãy cài đặt các thư viện cần thiết bằng 
 pip install -r requirements.txt 
 ```
 
-2. Chạy minh họa KNN
+:two: Chạy minh họa `KNN`
 
 Chạy minh họa KNN sử dụng manim từ terminal bằng lệnh:
 ```
 manim -pql KNN.py KNNVisualization
 ```
-Chi tiết setup cài manim trên VSCode [Manim Setup](https://www.youtube.com/watch?v=ib-I3ayqFaw).
 
-Chạy minh họa KNN sử dụng Gdal từ terminal bằng lệnh:
+Chi tiết setup cài `manim` trên VSCode [Manim Setup](https://www.youtube.com/watch?v=ib-I3ayqFaw).
+
+**Sau khi chạy sẽ hiện ra video như bên dưới**
+
+<video controls src="KNNVisualize/Video/KNNVisualization.mp4" title="Title"></video>
+
+Chạy minh họa `KNN` sử dụng `Gdal` từ terminal bằng lệnh:
 
 ```bash
 python KNNGdal.py
-
 ```
-📺 Video minh họa
-Dự án có các video trực quan hóa thuật toán KNN. Bạn có thể mở file [KNNVisualization.mp4](/KNN/KNNVisualize/Video/KNNVisualization.mp4) và [myvideo.mp4](/KNN/KNNVisualize/Video/myvideo.mp4) trong thư mục Video để xem chi tiết.
 
-3. Tương tác với biểu đồ
+**Sau khi chạy sẽ hiện ra video như bên dưới**
+
+<video controls src="KNNVisualize/Video/myvideo.mp4" title="Title"></video>
+
+:tv: Video minh họa
+
+Dự án có các video trực quan hóa thuật toán `KNN`. Bạn có thể mở file [KNNVisualization.mp4](/KNN/KNNVisualize/Video/KNNVisualization.mp4) và [myvideo.mp4](/KNN/KNNVisualize/Video/myvideo.mp4) trong thư mục Video để xem chi tiết.
+
+:three: Tương tác với biểu đồ
 
 Mở file [KNN.ipynb](/KNN/KNNVisualize/NotebookInteractive/KNN.ipynb) trong Jupyter Notebook để chạy từng bước.
+
 Nếu như đã chạy xong hết thì sẽ hiện hình bên dưới có thể điều chỉnh giá trị k
 
 ![alt text](/KNN/KNNVisualize/NotebookInteractive/newplot.png "Title")
 
-4. Image Classification với dữ liệu Dog,Cat,Panda
+:four: Image Classification với dữ liệu Dog,Cat,Panda
 
 Chạy file [KNN.ipynb](/KNN/KNNOfficial/KNN.ipynb) bằng cách bấm Runall sẽ cho ra kết quả như hình bên dưới
 
