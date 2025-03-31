@@ -94,3 +94,5 @@ Nếu như đã chạy xong hết thì sẽ hiện hình bên dưới có thể 
 Chạy file [KNN.ipynb](/KNN/KNNOfficial/KNN.ipynb) bằng cách bấm Runall sẽ cho ra kết quả như hình bên dưới
 
 ![alt text](/KNN/KNNOfficial/output.png "Title")
+
+Bạn có thể lấy thêm dữ liệu ở đây để có thể tiếp tục [Ảnh chó mèo](https://drive.google.com/drive/folders/1lBOcHTkT8pgG4gTna1JhsgPX6-vRvk0h?usp=sharing)
