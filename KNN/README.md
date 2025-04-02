@@ -95,4 +95,4 @@ Chạy file [KNN.ipynb](/KNN/KNNOfficial/KNN.ipynb) bằng cách bấm Runall s�
 
 ![alt text](/KNN/KNNOfficial/output.png "Title")
 
-Bạn có thể lấy thêm dữ liệu ở đây để có thể tiếp tục [Ảnh chó mèo](https://drive.google.com/drive/folders/12nmbK8JcUKXUGfuXWfYdyNxt4nG8lbeY?usp=sharing)
+Bạn có thể lấy thêm dữ liệu ở đây để có thể tiếp tục [Ảnh chó mèo](https://drive.google.com/drive/folders/1g901Br_nCKDqmlH--fnrD2r7719Z0Xxe?usp=sharing)
