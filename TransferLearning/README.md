@@ -1,31 +1,44 @@
-# Phân Loại Ảnh với Pretrained-model
+# 🧠 Transfer Learning & Pretrained Model - Image Classification
 
-## Tổng Quan
+📁 Đây là bài tập trong khóa học **Computer Vision**, tập trung vào việc xây dựng mô hình phân loại ảnh bằng hai phương pháp:
 
-Dự án này thực hiện phân loại hình ảnh sử dụng bốn mô hình học sâu đã được huấn luyện trước: VGG16, ResNet50, InceptionV3 và MobileNet. Hệ thống sẽ xử lý nhiều ảnh trong một thư mục, phân loại chúng bằng các mô hình này và lưu kết quả với nhãn dự đoán được hiển thị trên ảnh.
+1. **Pretrained Model** (sử dụng trực tiếp mô hình huấn luyện sẵn)
+2. **Transfer Learning** (tùy biến lại mô hình pretrained theo bài toán mới)
 
-## Cấu Trúc Thư Mục
+---
+
+## 📂 Cấu trúc thư mục
+``` bash
+TransferLearning/ 
+├── PretrainedModelImageClassification/📘 Sử dụng mô hình VGG16,Mobilenet,Inception,Resnet50 đã huấn luyện sẵn để phân loại ảnh trực tiếp │ 
+├── TransferLearningImageClassification/ 📗 Tinh chỉnh mô hình ResNet bằng dữ liệu mới (20 lớp từ CIFAR-100)
 ```
-image-classification/
-│── images/     
-    |── input     # Thư mục chứa ảnh đầu vào
-    |── output    # Thư mục chứa ảnh đầu ra sau khi sử dụng mô hình
-│── pretrained-imagenet-models-classification.ipynb   # Script chính để thực hiện phân loại
-│── requirements.txt     # Danh sách các thư viện cần cài đặt
-│── README.md            # Tài liệu hướng dẫn dự án
-```
 
-## Yêu Cầu
-+ numpy
-+ opencv-python
-+ matplotlib
-+ tensorflow
-+ keras
+## 1️⃣ PretrainedModelImageClassification
 
-## Kết quả
-Sau khi chạy [text](pretrained-imagenet-models-classification.ipynb) sẽ cho ra kết quả như hình bên dưới
-![alt text](images/output/cat_output.jpg)
+- Sử dụng mô hình VGG16,Mobilenet,Inception,Resnet50 đã được huấn luyện trên **ImageNet** để phân loại ảnh mà **không thực hiện huấn luyện lại**.
+- Mục tiêu:
+  - Hiểu cách sử dụng các mô hình pretrained như một extractor đặc trưng (feature extractor).
+- Các bước chính:
+  - Nạp ảnh đầu vào
+  - Dùng VGG16,Mobilenet,Inception,Resnet50 để dự đoán trực tiếp
+- Phù hợp cho các ứng dụng cần inference nhanh mà không có đủ dữ liệu để huấn luyện.
 
+---
 
+## 2️⃣ TransferLearningImageClassification
 
-## Có thể download ảnh xe cộ để vọc vạch thêm tại đây [Ảnh xe cộ](https://drive.google.com/drive/folders/1UOYgv7DiSg8prCg4h5d5XeNsbyTJANwg?usp=sharing)
+- Dùng **Transfer Learning** để huấn luyện mô hình ResNet dựa trên **tập con CIFAR-100 (20 lớp)**.
+- Quy trình:
+  - Chia tập dữ liệu thành `train/` và `test/`
+  - Tăng cường dữ liệu (Image Augmentation)
+  - Tải mô hình ResNet pretrained và **đóng băng các tầng đầu**
+  - Tùy biến các tầng cuối cho bài toán phân loại ảnh 20 lớp
+  - Sử dụng:
+    - `Categorical Crossentropy`
+    - `Adam` optimizer
+    - `ReduceLROnPlateau`
+  - Trực quan hóa quá trình huấn luyện (biểu đồ Accuracy & Loss)
+- **Kết quả đạt được:**
+  - Accuracy train: 97.51%
+  - Accuracy Validation: 86.98%
