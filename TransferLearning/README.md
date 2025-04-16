@@ -22,7 +22,7 @@ TransferLearning/
 - Các bước chính:
   - Nạp ảnh đầu vào
   - Dùng VGG16,Mobilenet,Inception,Resnet50 để dự đoán trực tiếp
-- Phù hợp cho các ứng dụng cần inference nhanh mà không có đủ dữ liệu để huấn luyện.
+
 
 ---
 
